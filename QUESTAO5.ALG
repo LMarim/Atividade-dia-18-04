@@ -1,32 +1,33 @@
 Algoritmo "QUESTAO5"
-// Disciplina   : [ L√≥gica de Programa√ß√£o]
-// Professor   :Carlos 
-// Descri√ß√£o   : Fa√ßa um programa que leia um n√∫mero informado pelo usu√°rio e mostre na tela os n√∫meros primos.
+// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
+// Professor   : Antonio Carlos Nicolodi
+// DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 19/04/2023
 Var
-// Se√ß√£o de Declara√ß√µes das vari√°veis 
-numero,i,cont:inteiro
+   // SeÁ„o de DeclaraÁıes das vari·veis
+   numero,i,j,cont:inteiro
 
 Inicio
-// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc... 
-escreval("digite um numero inteiro positivo")
-leia(numero)
+   // SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
+   escreval("digite um numero inteiro")
+   leia(numero)
 
-para i de 1 ate numero faca
-se numero mod i = 0 entao
-escreva(i)
-cont<-cont+1
-fimse
+   escreval("os n˙meros primos s„o: ")
+   
+   para i de 1 ate numero faca
+      cont<-0
 
-fimpara
+      para j de 1 ate i faca
+         se (i mod j=0) entao
+            cont<- cont + 1
+         fimse
+      fimpara
 
-escreval()
-escreval("----------------------")
-se cont=2 entao
-escreval("o numero",numero," √© primo")
-senao
-escreval("o numero",numero," n√£o √© primo")
-fimse
+      se (cont=2) entao
+         escreva(i)
+      fimse
+
+      fimpara
 
 Fimalgoritmo

@@ -24,7 +24,7 @@ Inicio
  media<-numTotal/contador
  fimse
  
- ate (numero<0)
+ ate (numero=0)
 
  escreval("a média aritmética dos números digitados é: ",media :6:2)
 

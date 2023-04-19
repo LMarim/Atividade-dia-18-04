@@ -46,8 +46,8 @@ fimse
 fimenquanto
 
 escreval("Total de famílias que responderam a pesquisa: ",familias)
-escreval("Média do sálario da população: ",mediaSalarial :6:2)
+escreval("Média do sálario da população: R$",mediaSalarial :6:2)
 escreval("Media de Quantidade de filhos da população: ",mediaFilhos :3:2)
-escreval("Maior sálario da região: ",maiorSalario)
-escreval("Menor sálario da região: ",menorSalario)
+escreval("Maior sálario da região: R$",maiorSalario)
+escreval("Menor sálario da região: R$",menorSalario)
 Fimalgoritmo

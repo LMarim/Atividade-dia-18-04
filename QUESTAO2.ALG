@@ -1,21 +1,22 @@
 Algoritmo "questao2"
-// Disciplina   : [ LÛgica de ProgramaÁ„o]
+// Disciplina   : [ L√≥gica de Programa√ß√£o]
 // Professor   :Carlos
-// DescriÁ„o  : Construa um algoritmo que calcule a mÈdia aritmÈtica de v·rios valores
-//inteiros positivos, lidos externamente. O final da leitura acontecer· quando for lido um valor negativo.
+// Descri√ß√£o  : Construa um algoritmo que calcule a m√©dia aritm√©tica de v√°rios valores
+//inteiros positivos, lidos externamente. O final da leitura acontecer√° quando for lido um valor negativo.
 // Autor(a)    : Lucas Marinho
 // Data atual  : 18/04/2023
 Var
-// SeÁ„o de DeclaraÁıes das vari·veis 
+// Se√ß√£o de Declara√ß√µes das vari√°veis 
 numero,contador,numTotal:inteiro
 media:real
 Inicio
-// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc... 
+// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc... 
  numero<-0
  repita
 
- escreval("digite um n˙mero")
+ escreval("digite um n√∫mero")
  leia(numero)
+ limpatela
  
  se(numero>0) entao
  numTotal<-numTotal+numero
@@ -25,6 +26,6 @@ Inicio
  
  ate (numero<0)
 
- escreval("a mÈdia aritmÈtica dos n˙meros digitados È: ",media :6:2)
+ escreval("a m√©dia aritm√©tica dos n√∫meros digitados √©: ",media :6:2)
 
 Fimalgoritmo

@@ -10,9 +10,9 @@ Algoritmo "questao3"
 // Data atual  : 18/04/2023
 Var
    // Seção de Declarações das variáveis
-numero,numeroPar,numeroImpar,quantPar,quantImpar,contador: inteiro
-somaPar,somaImpar,soma:inteiro
-media,mediapar: real
+   numero,numeroPar,numeroImpar,quantPar,quantImpar,contador: inteiro
+   somaPar,somaImpar,contpar,soma:inteiro
+   media,mediapar: real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    repita
@@ -20,29 +20,33 @@ Inicio
       escreval("digite um número")
       leia(numero)
 
-limpatela
-      
-      se(numero mod 2=0) entao
-         numeroPar<-numero
-         quantPar<-quantPar+1
-      senao
-         numeroImpar<-numero
-         quantImpar<-quantImpar+1
+      limpatela
+
+      se numero > 0 entao
+
+         se(numero mod 2=0) entao
+            numeroPar<-numero
+            quantPar<-quantPar+1
+            contpar<-contpar+1
+         senao
+            numeroImpar<-numero
+            quantImpar<-quantImpar+1
          fimse
-         
+
          soma<-soma+numero
          contador<-contador+1
          somaPar<-somaPar+numeroPar
          somaImpar<-somaImpar+numeroImpar
 
          media<-soma/contador
-         mediapar<-somapar/contador
+         mediapar<-somapar/contpar
 
-      ate (numero=0)
+      fimse
+   ate (numero=0)
 
-      escreval("números pares: ",quantPar)
-      escreval("números ímpares: ",quantImpar)
-      escreval("media números pares: ",mediapar :3:2)
-      escreval("média geral: ",media :3:2)
+   escreval("números pares: ",quantPar)
+   escreval("números ímpares: ",quantImpar)
+   escreval("media números pares: ",mediapar :3:2)
+   escreval("média geral: ",media :3:2)
 
 Fimalgoritmo

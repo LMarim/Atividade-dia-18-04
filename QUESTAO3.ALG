@@ -28,14 +28,15 @@ Inicio
             numeroPar<-numero
             quantPar<-quantPar+1
             contpar<-contpar+1
-         senao
+        somaPar<-somaPar+numeroPar
+        senao
             numeroImpar<-numero
             quantImpar<-quantImpar+1
          fimse
 
          soma<-soma+numero
          contador<-contador+1
-         somaPar<-somaPar+numeroPar
+
          somaImpar<-somaImpar+numeroImpar
 
          media<-soma/contador

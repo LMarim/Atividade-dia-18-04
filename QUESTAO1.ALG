@@ -1,32 +1,32 @@
 Algoritmo "Questao1"
-// Disciplina   : [ LÛgica de ProgramaÁ„o]
+// Disciplina   : [ L√≥gica de Programa√ß√£o]
 // Professor   :Carlos
-// DescriÁ„o   : prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o sal·rio e n˙mero de filhos. A prefeitura deseja saber:
-//a) total de famÌlias que responderam a pesquisa;
-//b)mÈdia do sal·rio da populaÁ„o;
-//c) mÈdia do n˙mero de filhos;
-//d) maior sal·rio;
-//e)menor sal·rio.
-//O final da leitura de dados se dar· com a entrada de um sal·rio negativo.
+// Descri√ß√£o   : prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o sal√°rio e n√∫mero de filhos. A prefeitura deseja saber:
+//a) total de fam√≠lias que responderam a pesquisa;
+//b)m√©dia do sal√°rio da popula√ß√£o;
+//c) m√©dia do n√∫mero de filhos;
+//d) maior sal√°rio;
+//e)menor sal√°rio.
+//O final da leitura de dados se dar√° com a entrada de um sal√°rio negativo.
 // Autor(a)    : Lucas Marinho
 // Data atual  : 18/04/2023
 Var
-   // SeÁ„o de DeclaraÁıes das vari·veis
+   // Se√ß√£o de Declara√ß√µes das vari√°veis
    salario,salarioTotal,mediaSalarial,maiorSalario,menorSalario,mediaFilhos:real
    quantFilho,familias,totalFilho:inteiro
 
 Inicio
-   // SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
+   // Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
    salario<-0
    enquanto (salario>=0) faca
-      escreval("Qual o valor do seu s·lario")
+      escreval("Qual o valor do seu s√°lario")
       leia(salario)
       escreval("")
       escreval("Quantos filhos tens?")
       leia(quantFilho)
       limpatela
 
-      se salari>=0 entao
+      se salario>=0 entao
          familias<-(familias+1)
          salarioTotal<-(salarioTotal+salario)
          totalFilho<-(totalFilho+quantFilho)
@@ -34,12 +34,12 @@ Inicio
          se(salario>0) entao
             se(salario>maiorSalario) entao
                maiorSalario<-salario
-            senao(salario>0)
+            senao
                menorSalario<-salario
-
+fimse
                mediaSalarial<-(salarioTotal/familias)
                mediaFilhos<-(totalFilho/familias)
-            fimse
+            
 
             limpatela
 
@@ -47,9 +47,9 @@ Inicio
       fimse
    fimenquanto
 
-   escreval("Total de famÌlias que responderam a pesquisa: ",familias)
-   escreval("MÈdia do s·lario da populaÁ„o: R$",mediaSalarial :6:2)
-   escreval("Media de Quantidade de filhos da populaÁ„o: ",mediaFilhos :3:2)
-   escreval("Maior s·lario da regi„o: R$",maiorSalario)
-   escreval("Menor s·lario da regi„o: R$",menorSalario)
+   escreval("Total de fam√≠lias que responderam a pesquisa: ",familias)
+   escreval("M√©dia do s√°lario da popula√ß√£o: R$",mediaSalarial :6:2)
+   escreval("Media de Quantidade de filhos da popula√ß√£o: ",mediaFilhos :3:2)
+   escreval("Maior s√°lario da regi√£o: R$",maiorSalario)
+   escreval("Menor s√°lario da regi√£o: R$",menorSalario)
 Fimalgoritmo
